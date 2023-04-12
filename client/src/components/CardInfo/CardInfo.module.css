@@ -1,0 +1,72 @@
+.box {
+    width: 20em;
+    position: absolute;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    bottom: 35%;
+    color: white;
+    background: rgba(249, 148, 78, 0.7);
+    z-index: 99;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.calendar {
+    width: 210px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ca {
+    height: min-content;
+}
+
+.react-calendar__viewContainer {
+    margin-top: -10em;
+}
+
+.Input {
+    height: 3em;
+    max-width: 20em;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 0;
+    color: white;
+    border-radius: 5px;
+}
+
+.Input:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.inputField {
+    margin: 0.3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.Button {
+    background-color: rgba(249, 148, 78, 1);
+    border: 1px solid saddlebrown;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 8em;
+    height: 3em;
+    margin-top: 1em;
+}
+
+@media (max-width: 712px) {
+
+    .box {
+        width: 50%;
+        position: fixed;
+        transform: translate(-18%, 30%);
+    }
+}

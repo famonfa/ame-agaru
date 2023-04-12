@@ -1,0 +1,103 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+.loginCard {
+    height: 100vh;
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(249, 148, 78, 0.2);
+    width: 25em;
+    border-radius: 0.2em;
+    padding: 1.5em;
+}
+
+.title {
+    color: white;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inputForm {
+    padding: 1em;
+    margin: 0.2em;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom: 1px solid saddlebrown;
+    border-left: 1px solid saddlebrown;
+    background-color: rgba(249, 148, 78, 0.6);
+    color: white;
+}
+
+.inputForm::placeholder {
+    color: white;
+    font-size: 0.7rem;
+}
+
+
+.inputForm:focus {
+    outline: none
+}
+
+.loginLink {
+    font-size: 0.8rem;
+}
+
+.button {
+    background-color: rgba(249, 148, 78, 0.6);
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 1px solid saddlebrown;
+    border-bottom: 1px solid saddlebrown;
+    border-radius: 5px;
+    padding: 0.6em;
+    color: white;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none
+}
+
+
+.spanError {
+    font-size: 0.8rem;
+    padding: 0.3em;
+}
+
+
+.registerOrLogin {
+    color: saddlebrown;
+    z-index: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 712px) {
+    .loginCard {
+        margin-left: 0;
+    }
+}

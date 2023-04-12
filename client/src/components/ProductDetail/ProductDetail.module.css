@@ -1,0 +1,172 @@
+.Wrapper {
+  background-color: rgba(0, 0, 0, 0.9);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  z-index: 99;
+}
+
+.CardsWrapper {
+  height: 100vh;
+  margin-left: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card {
+
+  display: flex;
+  justify-content: center;
+  background-color: rgba(249, 148, 78, 0.1);
+  width: 80%;
+  align-items: center;
+  padding: 2em;
+  padding: 1.5em;
+  border-radius: 5px;
+}
+
+.imgDetail {
+  min-width: 35%;
+  min-height: 35%;
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  margin: 2em;
+}
+
+.title {
+  color: rgba(249, 148, 78, 0.6);
+
+}
+
+.info p {
+  width: 75%;
+  color: white;
+  opacity: 0.7;
+}
+
+.addTocart {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(249, 148, 78, 0.1);
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+.add {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 0;
+  padding: 0.9em;
+  cursor: pointer;
+}
+
+.addI {
+  color: rgba(249, 148, 78, 0.9);
+}
+
+.addTwo {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 0;
+  padding: 0.9em;
+  color: rgba(249, 148, 78, 0.9);
+  cursor: pointer;
+
+}
+
+.span {
+  color: rgba(249, 148, 78, 0.9);
+  padding: 0.7em;
+
+}
+
+.spanTwo {
+  color: rgba(0, 0, 0, 0.2);
+  padding: 0.7em;
+}
+
+.price {
+  color: rgba(249, 148, 78, 0.9);
+  padding: 0.7em;
+}
+
+.priceTwo {
+  color: rgba(0, 0, 0, 0.2);
+  padding: 0.7em;
+}
+
+@media (max-width: 990px) {
+  .Card {
+    max-width: 20em;
+    background-color: rgba(249, 148, 78, 0.1);
+
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 4em;
+  }
+
+  .imgDetail {
+    width: 20em;
+    height: 20em;
+    margin-top: 2em;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info p {
+    width: fit-content;
+  }
+
+  .title {
+    margin: -0.2em;
+  }
+
+  .addTocart {
+    width: 100%;
+
+  }
+}
+
+@media (max-width: 670px) {
+  .Card {
+    width: 100%;
+    height: 100vh;
+    padding: 2em;
+  }
+
+  .imgDetail {
+    width: 100%;
+    height: fit-content;
+    margin-top: 2em;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info p {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 712px) {
+  .CardsWrapper {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,135 @@
+.AboutWrapper {
+  background-color: rgba(0, 0, 0, 0.9);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.InfoOneContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.InfoOneContainer h2 {
+  color: rgba(249, 148, 78);
+}
+
+.ImgOneContainer {
+  width: 50%;
+  height: 100vh;
+  background-image: url("../../assets/AboutOne.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ImgTwoContainer {
+  width: 50%;
+  height: 100vh;
+  background-image: url("../../assets/AboutTwo.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TextOneContainer {
+  width: 50%;
+}
+
+.TextTwoContainer button {
+  margin: 2em;
+  margin-left: 4em;
+  width: 10em;
+  height: 3em;
+  background-color: rgba(249, 148, 78);
+  border: 0;
+  color: white;
+  font-family: "Nixie One", cursive;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.TextInfoLocation {
+  padding: 2em;
+  padding-left: 3em;
+}
+
+.TextInfoOpening {
+  padding: 2em;
+  padding-left: 3em;
+}
+
+.TextInfoContainer {
+  padding: 3em;
+}
+
+.buttonTelephone {
+  display: flex;
+  align-items: center;
+}
+
+.buttonTelephone p {
+  font-size: 800;
+  margin-left: 1em;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 695px) {
+  .AboutWrapper {
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .AboutWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/cooking.png");
+    background-size: cover;
+    opacity: 0.2;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* Set the opacity of the overlay */
+  }
+
+  .InfoOneContainer {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .TextOneContainer {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .ImgOneContainer {
+    display: none;
+  }
+  .InfoTwoContainer {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .TextTwoContainer {
+    width: 100%;
+    min-height: 50%;
+  }
+
+  .ImgTwoContainer {
+    display: none;
+  }
+}

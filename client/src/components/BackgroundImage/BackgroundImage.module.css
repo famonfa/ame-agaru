@@ -1,0 +1,34 @@
+.Cooking {
+    width: 30%;
+    position: fixed;
+    right: 10%;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: auto;
+    margin-right: -2%;
+}
+
+@media (max-width: 800px) {
+    .Cooking {
+        width: 50%;
+    }
+}
+
+@media (max-width: 613px) {
+    .Cooking {
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 440px) {
+    .Cooking {
+        width: 90%;
+    }
+}
+
+@media (max-width: 300px) {
+    .Cooking {
+        width: 120%;
+    }
+}

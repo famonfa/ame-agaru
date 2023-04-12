@@ -1,0 +1,369 @@
+.rowOne {
+  border-left: #fff 0.1px solid;
+  border-right: #fff 0.1px solid;
+  height: 100%;
+  width: fit-content;
+  opacity: 0.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SocialIcons {
+  transform: rotate(90deg);
+  margin-top: 1em;
+  cursor: pointer;
+  color: rgba(255, 162, 98);
+}
+
+.par {
+  color: white;
+  writing-mode: vertical-lr;
+  padding-top: 2em;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  position: fixed;
+  height: 100vh;
+  max-width: 40%;
+  display: flex;
+  background-color: rgba(35, 20, 0, 0.2);
+  transition: ease 0.2s;
+}
+
+.columnTwo {
+  position: fixed;
+  height: 100vh;
+  max-width: 30%;
+  display: flex;
+  animation-name: sliderTwo;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+@keyframes sliderTwo {
+  0% {
+    background-image: url("../../assets/h.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  33% {
+    background-image: url("../../assets/download.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  66% {
+    background-image: url("../../assets/ramenBowl.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  100% {
+    background-image: url("../../assets/h.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.rowTwo {
+  height: 100%;
+  width: 95%;
+  color: white;
+  opacity: 0.8;
+  padding: 1em;
+}
+
+.column:hover {
+  background-color: rgba(35, 20, 0, 0.8);
+}
+
+.navDiv {
+  display: flex;
+  align-items: center;
+  transition: ease 0.5s;
+}
+
+.navDiv:hover {
+  background-color: rgba(255, 162, 98, 0.7);
+}
+
+.backgroundSlider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  animation-name: slider;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+.login {
+  color: white;
+  width: 10em;
+  padding-left: 1em;
+}
+
+.imgLogo {
+  width: 7em;
+  cursor: pointer;
+}
+
+.username {
+  position: absolute;
+  right: 0;
+  color: white;
+  padding: 1em;
+  opacity: 0.8;
+  background-color: rgba(35, 20, 0, 0.2);
+  border-radius: 0.2em;
+  margin-right: 0.6em;
+}
+
+.username:hover {
+  background-color: rgba(35, 20, 0, 0.8);
+}
+
+.navDivTwo {
+  display: flex;
+  align-items: center;
+  transition: ease 1s;
+}
+
+.navDivTwo div {
+  display: flex;
+  align-items: center;
+}
+
+.navDivTwo:hover {
+  background-color: rgba(255, 162, 98, 0.7);
+}
+
+@keyframes slider {
+  /* 0% {
+      background-image: url('https://butagumi.com/shabuan/wp-content/themes/eatery-child/img/top_bg1.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    } */
+
+  0% {
+    background-image: url("https://butagumi.com/shabuan/wp-content/themes/eatery-child/img/top_bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  35% {
+    background-image: url("https://butagumi.com/shabuan/wp-content/themes/eatery-child/img/top_bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  70% {
+    background-image: url("https://dsignal.ismcdn.jp/mwimgs/1/e/-/img_1e60f9d65ee2f3aa08dc348485d071051017468.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  85% {
+    background-image: url("https://dsignal.ismcdn.jp/mwimgs/1/e/-/img_1e60f9d65ee2f3aa08dc348485d071051017468.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  100% {
+    background-image: url("https://butagumi.com/shabuan/wp-content/themes/eatery-child/img/top_bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* MOBILE */
+
+.navBarMobile {
+  height: 5em;
+  position: fixed;
+}
+
+.Hamburger {
+  padding: 1em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navBarMobile {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  z-index: 99;
+}
+
+.navBarMenuMobile {
+  width: 100%;
+  z-index: 99;
+}
+
+.MobileNavOnClick {
+  position: fixed;
+  right: 2%;
+  top: 8%;
+  width: 73%;
+  height: 90%;
+  background-image: url("../../assets/h.jpg");
+  z-index: 99;
+  animation: navbar-enter 0.5s ease forwards;
+}
+
+.MobileNavOnClickTwo {
+  position: fixed;
+  right: 2%;
+  top: 8%;
+  width: 40%;
+  height: 90%;
+  background-image: url("../../assets/h.jpg");
+  z-index: 99;
+  animation: navbar-enter 0.5s ease forwards;
+}
+
+@keyframes navbar-enter {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.filter {
+  background-color: rgba(35, 20, 0, 0.4);
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+
+  .MobileNavOnClickTwo {
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 712px) {
+
+  .MobileNavOnClickTwo {
+    width: 75%;
+  }
+
+  .imgLogo {
+    width: 3em;
+    padding: 1em;
+  }
+
+  .username {
+    display: none;
+    bottom: 0;
+  }
+
+  .logo {
+    padding-bottom: 20em;
+    height: 80vh;
+  }
+
+  .pOrange {
+    color: rgba(255, 162, 98);
+    font-weight: 400;
+    width: 75%;
+  }
+
+  .pOrangeTwo {
+    color: rgba(255, 162, 98);
+    font-weight: 400;
+    width: 20%;
+  }
+
+  @media (max-width: 420px) {
+    .MobileNavOnClick {
+      width: 100%;
+      height: 95%;
+    }
+  }
+
+  .rowOne {
+    width: fit-content;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 23%;
+    margin-top: -30%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .SocialIcons {
+    margin-top: 1em;
+    cursor: pointer;
+    color: rgba(255, 162, 98);
+  }
+
+  .par {
+    color: white;
+    padding-top: 2em;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
+
+.shopCart {
+  position: absolute;
+  color: white;
+}
+
+.cartLength {
+  position: relative;
+  color: white;
+  top: 0;
+  right: 95%;
+  color: rgba(255, 162, 98);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.shopLength {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hamburgerAndCart {
+  display: flex;
+  margin-left: 3em;
+  align-items: center;
+}

@@ -1,0 +1,80 @@
+.box {
+    width: 20em;
+    position: absolute;
+    padding: 5em;
+    bottom: 35%;
+    color: white;
+    background: rgba(249, 148, 78, 0.7);
+    z-index: 99;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.form {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button {
+    background-color: rgba(249, 148, 78, 0.9);
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 1px solid saddlebrown;
+    border-bottom: 1px solid saddlebrown;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 1.2em;
+    height: 1.2em;
+    font-size: small;
+    margin: 0.6em;
+}
+
+
+.info {
+    display: grid;
+    grid-template-columns: 13fr 1fr;
+    height: 3em;
+    gap: 1em;
+    margin: 1em;
+    padding: 0.3em;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    min-width: 15em;
+}
+
+.Input {
+    height: 3em;
+    min-width: 30em;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 0;
+    color: white;
+}
+
+.Input:focus {
+    outline: none
+}
+
+
+.button {
+    background-color: rgba(249, 148, 78, 1);
+    border: 1px solid saddlebrown;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 8em;
+    height: 3em;
+}
+
+@media (max-width: 712px) {
+
+    .box {
+        width: 50%;
+        position: fixed;
+        transform: translate(-18%, 30%);
+    }
+}
